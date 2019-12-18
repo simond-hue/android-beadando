@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="20dp"
+        android:id="@+id/emailTextViewRegister"></TextView>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextViewRegister"
+        android:id="@+id/emailEditTextRegister"
+        android:inputType="textEmailAddress"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Felhasználónév"
+        android:layout_below="@+id/emailEditTextRegister"
+        android:textSize="20dp"
+        android:id="@+id/felhTextViewRegister"></TextView>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/felhTextViewRegister"
+        android:id="@+id/felhEditTextRegister"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jelszó"
+        android:textSize="20dp"
+        android:id="@+id/jelszoTextViewRegister"
+        android:layout_below="@+id/felhEditTextRegister"></TextView>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jelszoTextViewRegister"
+        android:id="@+id/jelszoEditTextRegister"
+        android:inputType="textPassword"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teljes név"
+        android:textSize="20dp"
+        android:id="@+id/teljesNevTextViewRegister"
+        android:layout_below="@+id/jelszoEditTextRegister"></TextView>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teljesNevTextViewRegister"
+        android:id="@+id/teljesNevEditTextRegister"></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regisztráció"
+        android:id="@+id/regBtnReg"
+        android:layout_below="@id/teljesNevEditTextRegister"
+        android:layout_centerHorizontal="true">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backBtnReg"
+        android:text="Vissza"
+        android:layout_below="@id/regBtnReg"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+</RelativeLayout>
